@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  background-color: black;
+  color: white;
+
+  border-radius: 0 0 .8rem .8rem;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
+
+  margin: .5rem;
+  margin-right: 5rem;
+}
+
+.options {
+  font-size: 1em;
+  font-weight: bold;
+  color: grey;
+
+  margin: .5rem;
+}
+
+.options:hover {
+  text-decoration: underline;
+}
+
+.options_list {
+  list-style: none;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.options_container {
+  display: flex;
+  justify-content: center;
+
+  margin: .5rem;
+}
+
+.start {
+  display: flex;
+
+  background-color: red;
+
+  font-size: 1.5em;
+  font-weight: bold;
+
+  border-radius: .8rem;
+
+  margin: .5rem;
+  margin-left: auto;
+  margin-bottom: .8rem;
+  padding: .5rem;
+}
+
+.start:hover {
+  background-color: #dd0000;
+
+  font-size: 1.6em;
+}

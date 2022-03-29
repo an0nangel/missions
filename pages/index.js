@@ -1,6 +1,5 @@
+import Home from './home.jsx'
 
-export default function Home() {
-  return (
-    hello world
-  )
+export default function Index() {
+  return <Home />;
 }
