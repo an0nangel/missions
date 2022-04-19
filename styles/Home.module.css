@@ -1,0 +1,19 @@
+/* Title */
+.darkBlue {
+  background: radial-gradient(circle, rgba(20,3,84,1) 27%, rgba(6,4,33,1) 83%);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Highlight */
+#highlight {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.highlight_blue {
+  background: radial-gradient(circle, rgba(20,3,84,1) 27%, rgba(6,4,33,1) 83%);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
