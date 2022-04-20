@@ -1,19 +1,45 @@
+.darkBlue_bg {
+  background: #030c15;
+}
+
+
 /* Title */
 .darkBlue {
   background: radial-gradient(circle, rgba(20,3,84,1) 27%, rgba(6,4,33,1) 83%);
-   -webkit-background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
 
-
-/* Highlight */
-#highlight {
   font-weight: bold;
-  font-size: 1.1em;
 }
 
-.highlight_blue {
-  background: radial-gradient(circle, rgba(20,3,84,1) 27%, rgba(6,4,33,1) 83%);
-   -webkit-background-clip: text;
+.lightBlue {
+  background: linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  font-weight: bold;
+}
+
+.blazingRed {
+  background: linear-gradient(5deg, rgba(244,14,14,1) 23%, rgba(255,255,61,1) 73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-weight: bold;
+}
+
+/* Content */
+.content {
+  margin-left: 5rem;
+  margin-right: 30%;
+
+  font-size: 1.2em;
+}
+
+.content_dark {
+  margin-left: 5rem;
+  margin-right: 30%;
+
+  font-size: 1.2em;
+  color: white;
 }
