@@ -43,3 +43,43 @@
   font-size: 1.2em;
   color: white;
 }
+
+.explanation {
+  display: flex;
+}
+
+.explanation > p {
+  padding: 1rem;
+  margin:  1rem;
+  margin-right: 15%;
+
+  font-size: 1.2em;
+}
+
+.examplebox {
+  background: radial-gradient(circle, rgba(20,3,84,1) 27%, rgba(6,4,33,1) 83%);
+
+  padding: 1rem;
+  margin: 1rem;
+  margin-left: 4rem;
+
+  width: auto;
+  display: inline-block;
+
+  border-radius: .5rem;
+}
+
+.examplebox img {
+  border-radius: 1rem;
+}
+
+
+
+/* SVGs */
+#svg1 {
+  margin-bottom: -3rem;
+}
+
+#svg2 {
+  margin-top: -3rem;
+}

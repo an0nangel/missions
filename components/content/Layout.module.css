@@ -1,5 +1,4 @@
-#layout {
-  z-index: 10;
+.layout {
   margin: 2rem;
   padding: 1rem;
 }
