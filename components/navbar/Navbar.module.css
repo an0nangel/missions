@@ -1,4 +1,7 @@
 .nav {
+  z-index: 1;
+  position: absolute;
+
   display: flex;
   justify-content: space-between;
   align-items: center;

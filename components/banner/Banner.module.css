@@ -1,34 +1,46 @@
-.img {
-  z-index: -1;
+.banner {
+    z-index: -1;
+    position: relative;
+    
+    width: 100%;
+    height: 80vh;
+
+    background: url("/background.svg") no-repeat center right;
 }
 
-.curve {
-  margin-top: -100%;
+.content {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+
+    width: 60ch;
 }
 
-.header {
-  position: absolute;
-
-  top: 20%;
-  left: 1%;
-  background-color: rgba(255, 255, 255, 0.05);
-  margin: 1rem;
-  padding: 2rem;
-  border-radius: 1rem;
-  filter: blur(8px);
-  width: 65ch;
-  height: 18ch;
+.message {
+    font-size: 2.5rem;
+    font-weight: bold;;
+    text-shadow: 1px 1px 2px #000;
 }
 
-#text {
-  color: white;
-  font-size: 3em;
+.description {
+    width: 45ch;
+    margin-left: 1.2rem;
 
-  position: absolute;
-  top: 20%;
-  left: 1%;
-  margin: 1rem;
-  padding: 2rem;
+    font-size: 1.08rem;
+}
 
-  width: 30ch;
+.users_container {
+    display: flex;
+    align-items: flex-end;
+
+    width: auto;
+    height: 100%;
+}
+
+.users_img {
+    height: 6rem;
+
+    margin-left: 5rem;
+    margin-bottom: 9rem;
 }

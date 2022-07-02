@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import styles from './Navbar.module.css';
 
 
@@ -27,7 +28,7 @@ export default function Navbar(props) {
 
       <nav className={styles.nav}>
         <section className={styles.opt_container}>
-          <a href="/"><img src="/logo.png" alt="logo" className={styles.logo} /></a>
+          <Link href="/" passHref><img src="/logo.png" alt="logo" className={styles.logo}/></Link>
 
           <ul className={styles.nav_list}>
             <li className={styles.nav_item}><a href=".">Explore</a></li>
