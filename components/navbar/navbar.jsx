@@ -1,5 +1,6 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Navbar.module.css';
 
 
@@ -8,17 +9,17 @@ function handleClick(state, setState) {
 }
 
 
-export default function Navbar(props) {
+export default function Navbar() {
   const [dropdown, setDropdown] = React.useState(false);
 
   return (
     <header>
       <section className={styles.mobile_container} id={dropdown ? styles.show : null}>
         <ul className={styles.mnav_list}>
-          <li className={styles.nav_item}><a href=".">Explore</a></li>
-          <li className={styles.nav_item}><a href=".">Log In</a></li>
-          <li className={styles.nav_item}><a href=".">Sign Up</a></li>
-          <li className={styles.nav_item}><a href=".">Help</a></li>
+          <li className={styles.nav_item}><Link href="explore">Explore</Link></li>
+          <li className={styles.nav_item}><Link href="login">Log In</Link></li>
+          <li className={styles.nav_item}><Link href="signup">Sign Up</Link></li>
+          <li className={styles.nav_item}><Link href="help">Help</Link></li>
         </ul>
 
         <button className={styles.start_button}>
@@ -28,18 +29,18 @@ export default function Navbar(props) {
 
       <nav className={styles.nav}>
         <section className={styles.opt_container}>
-          <Link href="/" passHref><img src="/logo.png" alt="logo" className={styles.logo}/></Link>
+          <Link href="/"  className={styles.logo} passHref><Image src="/logo.png" alt="logo" width={115} height={55} /></Link>
 
           <ul className={styles.nav_list}>
-            <li className={styles.nav_item}><a href=".">Explore</a></li>
-            <li className={styles.nav_item}><a href=".">Log In</a></li>
-            <li className={styles.nav_item}><a href=".">Sign Up</a></li>
-            <li className={styles.nav_item}><a href=".">Help</a></li>
+            <li className={styles.nav_item}><Link href="explore">Explore</Link></li>
+            <li className={styles.nav_item}><Link href="login">Log In</Link></li>
+            <li className={styles.nav_item}><Link href="signup">Sign Up</Link></li>
+            <li className={styles.nav_item}><Link href="help">Help</Link></li>
           </ul>
         </section>
 
         <button className={styles.menu_button} onClick={() => handleClick(dropdown, setDropdown)}>
-          <img src="/menu.png" alt="menu" className={styles.menu_icon} />
+          <Image src="/menu.png" alt="menu" width={48} height={48} />
         </button>
 
         <button className={styles.start_button}>
